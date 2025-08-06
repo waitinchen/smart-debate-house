@@ -98,3 +98,28 @@ export default function Home() {
               <div className="space-y-3">
                 {Object.entries(spirits).filter(([_, spirit]) => spirit.side === 'negative').map(([name, spirit]) => (
                   <div key={name} className="bg-red-50 p-3 rounded-lg">
+                    <span className="text-xl mr-2">{spirit.icon}</span>
+                    {name}【{spirit.nickname}】
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="mt-6 pt-6 border-t">
+            <h3 className="text-lg font-semibold text-purple-600 mb-4">⚖️ 裁判</h3>
+            <div className="bg-purple-50 p-3 rounded-lg">
+              <span className="text-xl mr-2">⚖️</span>
+              天平【正義魔人】
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center text-gray-500 text-sm mt-8 pt-8 border-t">
+          © 2025 超智能股份有限公司. All rights reserved.
+        </div>
+
+        <audio ref={audioRef} style={{ display: 'none' }} />
+      </div>
+    </div>
+  );
+}

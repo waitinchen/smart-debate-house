@@ -1,33 +1,29 @@
 {
   "name": "smart-debate-house",
   "version": "1.0.0",
-  "description": "智能辯論所 - 語氣靈智慧辯論平台",
-  "main": "server.js",
+  "description": "超智能辯論所 - 世界第一個有聲AI辯論平台",
+  "private": true,
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
-    "build": "npm install --production"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "@line/bot-sdk": "^7.5.2",
-    "nodemailer": "^6.9.7",
-    "cors": "^2.8.5",
-    "helmet": "^7.1.0",
-    "dotenv": "^16.3.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
+    "next": "14.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "keywords": [
-    "line-bot",
+    "nextjs",
+    "react",
     "debate",
     "ai",
     "智能辯論",
-    "語氣靈"
+    "vercel"
   ],
   "author": "waitinchen",
   "license": "MIT"
